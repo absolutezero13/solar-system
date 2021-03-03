@@ -1,0 +1,152 @@
+$--one-year: 10s;
+
+.planets {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+
+  & > * {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgba(177, 171, 171, 0.219);
+    border-radius: 50%;
+    transition: all 0.2s;
+    &:hover {
+      box-shadow: 0px 0px 7px white;
+    }
+  }
+}
+
+//Common Styles for Each Planet
+.planet {
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+}
+
+///////// Planets and Orbits ////////
+
+.planets__neptun-orbit {
+  color: wheat;
+  width: 70rem;
+  height: 70rem;
+  animation: Rotation (165 * $--one-year) linear infinite;
+}
+
+.neptun {
+  width: 5rem;
+  height: 5rem;
+  background: url(../../PlanetSVG/neptune.svg);
+  background-size: cover;
+  animation: Rotation 10s linear infinite;
+}
+
+.planets__uranus-orbit {
+  width: 60rem;
+  height: 60rem;
+  animation: Rotation (84 * $--one-year) linear infinite;
+}
+
+.uranus {
+  width: 3rem;
+  height: 3rem;
+  background: url(../../PlanetSVG/uranus.svg);
+  animation: Rotation 5s linear infinite;
+  background-size: cover;
+}
+.planets__saturn-orbit {
+  width: 50rem;
+  height: 50rem;
+  animation: Rotation (29 * $--one-year) linear infinite;
+}
+
+.saturn {
+  width: 5rem;
+  height: 5rem;
+  background: url(../../PlanetSVG/saturn.svg);
+  background-size: cover;
+  animation: Rotation 5s linear infinite;
+}
+.planets__jupiter-orbit {
+  width: 40rem;
+  height: 40rem;
+  animation: Rotation (12 * $--one-year) linear infinite;
+}
+
+.jupiter {
+  width: 5.7rem;
+  height: 5.7rem;
+  background: url(../../PlanetSVG/jupiter.svg);
+  background-size: cover;
+  animation: Rotation 5s linear infinite;
+}
+.planets__mars-orbit {
+  width: 30rem;
+  height: 30rem;
+  animation: Rotation (2 * $--one-year) linear infinite;
+}
+
+.mars {
+  width: 2rem;
+  height: 2rem;
+  background: url(../../PlanetSVG/mars.svg);
+  background-size: cover;
+  animation: Rotation 9s linear infinite;
+}
+.planets__earth-orbit {
+  width: 20rem;
+  height: 20rem;
+  animation: Rotation $--one-year linear infinite;
+}
+
+.earth {
+  width: 0.55rem;
+  height: 0.55rem;
+  background: url(../../PlanetSVG/earth.svg) 0 / auto 100%;
+  animation: Rotation 5s linear infinite;
+}
+.planets__venus-orbit {
+  width: 15rem;
+  height: 15rem;
+  animation: Rotation (2 / 3 * $--one-year) linear infinite;
+}
+
+.venus {
+  width: 0.5rem;
+  height: 0.5rem;
+  background: url(../../PlanetSVG/venus.svg);
+  background-size: cover;
+  animation: Rotation 5s linear infinite;
+}
+.planets__mercury-orbit {
+  width: 12rem;
+  height: 12rem;
+  animation: Rotation (1 / 4 * $--one-year) linear infinite;
+}
+
+.mercury {
+  width: 0.2rem;
+  height: 0.2rem;
+  background: url(../../PlanetSVG/mercury.svg);
+  background-size: cover;
+  animation: Rotation 2s linear infinite;
+}
+.sun {
+  width: 9rem;
+  height: 9rem;
+  background: url(../../PlanetSVG/sun2.svg);
+  background-size: cover;
+  animation: Rotation 3s linear infinite;
+  box-shadow: 0px 0px 20px rgb(235, 238, 59);
+}
+@keyframes Rotation {
+  from {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}

@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  overflow: hidden;
+  @media only screen and (max-width: 900px) {
+    font-size: 50%;
+  }
+}
+
+body {
+  color: rgba(175, 166, 166, 0.986);
+  height: 100vh;
+  width: 100%;
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+  background: rgb(34, 30, 30);
+}
+.App {
+  display: flex;
+  flex-direction: row;
+}

@@ -1,0 +1,23 @@
+.time-input {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+
+  &__input {
+    font-size: 1.5rem;
+    border-radius: 100px;
+    outline: none;
+    border: none;
+    transition: all 0.3s;
+    height: 3rem;
+    width: 10rem;
+
+    &:focus {
+      transform: scaleX(1.2);
+      box-shadow: 0 0 10px rgb(129, 122, 122);
+    }
+  }
+}
