@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/solar-system/static/css/main.f1fe4445.chunk.css",
+    "main.js": "/solar-system/static/js/main.6aafa0b2.chunk.js",
+    "main.js.map": "/solar-system/static/js/main.6aafa0b2.chunk.js.map",
+    "runtime-main.js": "/solar-system/static/js/runtime-main.cabbc1f6.js",
+    "runtime-main.js.map": "/solar-system/static/js/runtime-main.cabbc1f6.js.map",
+    "static/js/2.654da0d8.chunk.js": "/solar-system/static/js/2.654da0d8.chunk.js",
+    "static/js/2.654da0d8.chunk.js.map": "/solar-system/static/js/2.654da0d8.chunk.js.map",
+    "static/js/3.8f59bce2.chunk.js": "/solar-system/static/js/3.8f59bce2.chunk.js",
+    "static/js/3.8f59bce2.chunk.js.map": "/solar-system/static/js/3.8f59bce2.chunk.js.map",
+    "index.html": "/solar-system/index.html",
+    "static/css/main.f1fe4445.chunk.css.map": "/solar-system/static/css/main.f1fe4445.chunk.css.map",
+    "static/js/2.654da0d8.chunk.js.LICENSE.txt": "/solar-system/static/js/2.654da0d8.chunk.js.LICENSE.txt",
+    "static/media/main.scss": "/solar-system/static/media/venus.49bf2264.svg",
+    "static/media/sun.db2717a2.svg": "/solar-system/static/media/sun.db2717a2.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cabbc1f6.js",
+    "static/js/2.654da0d8.chunk.js",
+    "static/css/main.f1fe4445.chunk.css",
+    "static/js/main.6aafa0b2.chunk.js"
+  ]
+}
