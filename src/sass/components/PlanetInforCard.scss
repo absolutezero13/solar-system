@@ -1,0 +1,49 @@
+.planet-info-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+  //   transition: all 2s;
+  animation: fadeIn 1s ease;
+  border: 1px solid rgba(177, 171, 171, 0.219);
+  padding: 2rem;
+  position: absolute;
+  top: 0;
+  left: 17%;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    &__image {
+      width: 5rem;
+      height: 5rem;
+      margin-right: 1rem;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+
+    &__distance,
+    &__temperature,
+    &__radius {
+      border-bottom: 1px solid rgba(177, 171, 171, 0.219);
+      padding: 0rem 1rem;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-100%);
+  }
+  to {
+    opacity: 100%;
+    transform: translate(0%);
+  }
+}

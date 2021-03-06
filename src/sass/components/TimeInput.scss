@@ -7,9 +7,11 @@
   font-size: 1.2rem;
 
   &__input {
-    padding: 1rem;
+    text-align: center;
+    // padding: 1rem;
+    margin-right: 0.2rem;
     font-size: 1.5rem;
-    border-radius: 100px;
+    border-radius: 5px;
     outline: none;
     border: none;
     transition: all 0.3s;
