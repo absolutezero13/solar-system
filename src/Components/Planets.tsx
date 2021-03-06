@@ -1,33 +1,56 @@
-import React, { useRef } from "react";
-
-const Planets: React.FC = () => {
-  const planetNeptun = useRef(null);
-
-  console.log(planetNeptun.current);
+import React from "react";
+interface PlanetsProps {
+  miliSeconds: number;
+}
+const Planets: React.FC<PlanetsProps> = ({ miliSeconds }) => {
   return (
     <div className="planets">
-      <div ref={planetNeptun} className="planets__neptun-orbit">
+      <div
+        style={{ animationDuration: `${miliSeconds * 165}ms` }}
+        className="planets__neptun-orbit"
+      >
         <div className="planet neptun"></div>
       </div>
-      <div className="planets__uranus-orbit">
+      <div
+        style={{ animationDuration: `${miliSeconds * 84}ms` }}
+        className="planets__uranus-orbit"
+      >
         <div className="planet uranus"></div>
       </div>
-      <div className="planets__saturn-orbit">
+      <div
+        style={{ animationDuration: `${miliSeconds * 29}ms` }}
+        className="planets__saturn-orbit"
+      >
         <div className="planet saturn"></div>
       </div>
-      <div className="planets__jupiter-orbit">
+      <div
+        style={{ animationDuration: `${miliSeconds * 12}ms` }}
+        className="planets__jupiter-orbit"
+      >
         <div className="planet jupiter"></div>
       </div>
-      <div className="planets__mars-orbit">
+      <div
+        style={{ animationDuration: `${miliSeconds * 2}ms` }}
+        className="planets__mars-orbit"
+      >
         <div className="planet mars"></div>
       </div>
-      <div className="planets__earth-orbit">
+      <div
+        style={{ animationDuration: `${miliSeconds}ms` }}
+        className="planets__earth-orbit"
+      >
         <div className="planet earth"></div>
       </div>
-      <div className="planets__venus-orbit">
+      <div
+        style={{ animationDuration: `${(miliSeconds * 2) / 3}ms` }}
+        className="planets__venus-orbit"
+      >
         <div className="planet venus"></div>
       </div>
-      <div className="planets__mercury-orbit">
+      <div
+        style={{ animationDuration: `${miliSeconds / 4}ms` }}
+        className="planets__mercury-orbit"
+      >
         <div className="planet mercury"></div>
       </div>
       <div className="planet sun"></div>

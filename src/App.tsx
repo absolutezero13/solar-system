@@ -1,13 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import Planets from "./Components/Planets";
 import SideBar from "./Components/SideBar";
-import TimeInput from "./Components/TimeInput";
 
-const App = () => {
+const App: React.FC = () => {
+  const [miliSeconds, setmiliSeconds] = useState(10000);
+
   return (
     <div className="App">
-      <SideBar />
-      <Planets />
+      <SideBar miliSeconds={miliSeconds} setmiliSeconds={setmiliSeconds} />
+      <Planets miliSeconds={miliSeconds} />
     </div>
   );
 };
