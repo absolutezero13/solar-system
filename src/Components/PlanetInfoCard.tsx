@@ -6,7 +6,6 @@ interface PlanetInfosProps {
   distanceFromSun?: string;
   radius: string;
   svg: string;
-  isDisplayed: boolean;
 }
 const PlanetInfoCard: React.FC<PlanetInfosProps> = ({
   planetName,

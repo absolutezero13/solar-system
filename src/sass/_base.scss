@@ -4,8 +4,14 @@
 html {
   font-size: 62.5%;
   overflow: hidden;
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 950px) {
     font-size: 50%;
+  }
+  @media only screen and (max-width: 750px) {
+    font-size: 40%;
+  }
+  @media only screen and (max-width: 500px) {
+    font-size: 30%;
   }
 }
 

@@ -12,7 +12,6 @@ const PlanetInfoLink: React.FC = () => {
             distanceFromSun,
             averageTemperature,
             radius,
-            isDisplayed,
           } = planetInfo;
 
           return (
@@ -23,7 +22,6 @@ const PlanetInfoLink: React.FC = () => {
               distanceFromSun={distanceFromSun}
               averageTemperature={averageTemperature}
               radius={radius}
-              isDisplayed={isDisplayed}
             />
           );
         })}

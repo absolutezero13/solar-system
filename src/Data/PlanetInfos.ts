@@ -14,7 +14,6 @@ export const planetInfos = [
     radius: "696340 KM",
     averageTemperature: "5505°C",
     svg: sun,
-    isDisplayed: false,
   },
 
   {
@@ -24,7 +23,6 @@ export const planetInfos = [
     numberOfMoons: "0",
     averageTemperature: "430°C",
     svg: mercury,
-    isDisplayed: false,
   },
   {
     planetName: "Venus",
@@ -33,7 +31,6 @@ export const planetInfos = [
     numberOfMoons: "0",
     averageTemperature: "471°C",
     svg: venus,
-    isDisplayed: false,
   },
   {
     planetName: "Earth",
@@ -42,7 +39,6 @@ export const planetInfos = [
     numberOfMoons: "1",
     averageTemperature: "16°C",
     svg: earth,
-    isDisplayed: false,
   },
   {
     planetName: "Mars",
@@ -51,7 +47,6 @@ export const planetInfos = [
     numberOfMoons: "2",
     averageTemperature: "-28°C",
     svg: mars,
-    isDisplayed: false,
   },
   {
     planetName: "Jupiter",
@@ -60,7 +55,6 @@ export const planetInfos = [
     numberOfMoons: "67",
     averageTemperature: "-108°C",
     svg: jupiter,
-    isDisplayed: false,
   },
   {
     planetName: "Saturn",
@@ -69,7 +63,6 @@ export const planetInfos = [
     numberOfMoons: "62",
     averageTemperature: "-138°C",
     svg: saturn,
-    isDisplayed: false,
   },
   {
     planetName: "Uranus",
@@ -78,7 +71,6 @@ export const planetInfos = [
     numberOfMoons: "27",
     averageTemperature: "-195°C",
     svg: uranus,
-    isDisplayed: false,
   },
   {
     planetName: "Neptune",
@@ -87,6 +79,5 @@ export const planetInfos = [
     numberOfMoons: "13",
     averageTemperature: "-201°C",
     svg: neptune,
-    isDisplayed: false,
   },
 ];

@@ -7,7 +7,6 @@ interface PlanetInfosProps {
   distanceFromSun?: string;
   radius: string;
   svg: string;
-  isDisplayed: boolean;
 }
 
 const PlanetInfos: React.FC<PlanetInfosProps> = ({
@@ -16,10 +15,9 @@ const PlanetInfos: React.FC<PlanetInfosProps> = ({
   distanceFromSun,
   averageTemperature,
   radius,
-  isDisplayed,
 }) => {
-  const [displayStatus, setDisplayStatus] = useState(isDisplayed);
-
+  const [displayingItem, setDisplayingItem] = useState("");
+  const [displayStatus, setDisplayStatus] = useState(false);
   const displayPlanetInfo = () => {
     setDisplayStatus(!displayStatus);
   };
@@ -41,7 +39,6 @@ const PlanetInfos: React.FC<PlanetInfosProps> = ({
           distanceFromSun={distanceFromSun}
           averageTemperature={averageTemperature}
           radius={radius}
-          isDisplayed={isDisplayed}
         />
       )}
     </div>
