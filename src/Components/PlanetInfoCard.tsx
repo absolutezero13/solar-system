@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 interface PlanetInfosProps {
   planetName: string;
@@ -8,10 +8,13 @@ interface PlanetInfosProps {
   svg: string;
   isDisplayed: boolean;
 }
-const PlanetInfoCard: React.FC<PlanetInfosProps> = (
-  { planetName, svg, distanceFromSun, averageTemperature, radius },
-  props
-) => {
+const PlanetInfoCard: React.FC<PlanetInfosProps> = ({
+  planetName,
+  svg,
+  distanceFromSun,
+  averageTemperature,
+  radius,
+}) => {
   return (
     <div className="planet-info-card">
       <div className="planet-info-card__header">

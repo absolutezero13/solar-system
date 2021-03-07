@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import PlanetInfoCard from "./PlanetInfoCard";
 
 interface PlanetInfosProps {
@@ -23,6 +23,7 @@ const PlanetInfos: React.FC<PlanetInfosProps> = ({
   const displayPlanetInfo = () => {
     setDisplayStatus(!displayStatus);
   };
+
   return (
     <div
       onClick={displayPlanetInfo}

@@ -1,5 +1,3 @@
-$--one-year: 10000ms;
-
 .planets {
   display: flex;
   height: 100vh;
@@ -9,9 +7,9 @@ $--one-year: 10000ms;
   & > * {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 45%;
     transform: translate(-50%, -50%);
-    border: 1px solid rgba(177, 171, 171, 0.219);
+    border: 1px solid $line-color;
     border-radius: 50%;
     transition: all 0.2s;
     &:hover {

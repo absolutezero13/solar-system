@@ -6,11 +6,13 @@
   font-size: 1rem;
   //   transition: all 2s;
   animation: fadeIn 1s ease;
-  border: 1px solid rgba(177, 171, 171, 0.219);
+  border: 1px solid $line-color;
   padding: 2rem;
   position: absolute;
-  top: 0;
-  left: 17%;
+  top: 1%;
+  right: 1%;
+
+  box-shadow: 0 0 10px 2px rgb(252, 81, 81);
 
   &__header {
     display: flex;
@@ -21,6 +23,7 @@
       width: 5rem;
       height: 5rem;
       margin-right: 1rem;
+      animation: rotate 10s infinite linear;
     }
   }
 
@@ -31,7 +34,7 @@
     &__distance,
     &__temperature,
     &__radius {
-      border-bottom: 1px solid rgba(177, 171, 171, 0.219);
+      border-bottom: 1px solid $line-color;
       padding: 0rem 1rem;
     }
   }
@@ -45,5 +48,14 @@
   to {
     opacity: 100%;
     transform: translate(0%);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
