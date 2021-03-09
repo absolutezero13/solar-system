@@ -1,3 +1,3 @@
-# COMING SOON...
+# SOLAR SYSTEM
 
-Typescript and Context API
+Solar system app written with React and Typescript.
