@@ -1,18 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
+import PlanetContext from "../Context/PlanetContext";
 
-interface PlanetInfosProps {
+interface PlanetInfoCardProps {
   planetName: string;
   averageTemperature: string;
   distanceFromSun?: string;
   radius: string;
   svg: string;
 }
-const PlanetInfoCard: React.FC<PlanetInfosProps> = ({
+
+const PlanetInfoCard: React.FC<PlanetInfoCardProps> = ({
   planetName,
   svg,
   distanceFromSun,
-  averageTemperature,
   radius,
+  averageTemperature,
 }) => {
   return (
     <div className="planet-info-card">
@@ -36,7 +38,7 @@ const PlanetInfoCard: React.FC<PlanetInfosProps> = ({
         )}
         <div className="planet-info-card__info__temperature">
           <p>
-            <b>Avg. Temperature</b>{" "}
+            <b>Avg. Temperature</b>
           </p>
           <p>{averageTemperature}</p>
         </div>

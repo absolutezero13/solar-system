@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useState } from "react";
+import PlanetContext from "../Context/PlanetContext";
 import PlanetInfoCard from "./PlanetInfoCard";
 
 interface PlanetInfosProps {
@@ -13,8 +14,8 @@ const PlanetInfos: React.FC<PlanetInfosProps> = ({
   planetName,
   svg,
   distanceFromSun,
-  averageTemperature,
   radius,
+  averageTemperature,
 }) => {
   const [displayStatus, setDisplayStatus] = useState(false);
   const displayPlanetInfo = () => {
@@ -22,17 +23,12 @@ const PlanetInfos: React.FC<PlanetInfosProps> = ({
   };
 
   return (
-    <div
-      onClick={displayPlanetInfo}
-      key={planetName}
-      className="planet-list__infos"
-    >
+    <div onClick={displayPlanetInfo} className="planet-list__infos">
       <li>
         <img src={svg} alt="planet-logo" /> <p>{planetName}</p>
       </li>
       {displayStatus && (
         <PlanetInfoCard
-          key={distanceFromSun}
           planetName={planetName}
           svg={svg}
           distanceFromSun={distanceFromSun}
