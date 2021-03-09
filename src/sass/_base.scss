@@ -16,23 +16,24 @@ html {
   @media only screen and (max-width: 450px) {
     font-size: 25%;
   }
-  @media only screen and (max-width: 400px) {
-    font-size: 20%;
-  }
 }
 
 body {
-  color: rgba(175, 166, 166, 0.986);
+  color: $text-color;
   overflow: hidden;
   height: 100vh;
   width: 100%;
   font-family: sans-serif;
   padding: 0;
   margin: 0;
-  background: rgb(34, 30, 30);
+  background: $bg-color;
 }
 .App {
   display: flex;
   flex-direction: row;
   align-items: center;
+
+  @media only screen and (max-width: 600px) {
+    flex-direction: column-reverse;
+  }
 }
