@@ -12,6 +12,7 @@ html {
   }
   @media only screen and (max-width: 600px) {
     font-size: 30%;
+    overflow: auto;
   }
   @media only screen and (max-width: 450px) {
     font-size: 25%;
@@ -20,7 +21,6 @@ html {
 
 body {
   color: $text-color;
-  overflow: hidden;
   height: 100vh;
   width: 100%;
   font-family: sans-serif;
