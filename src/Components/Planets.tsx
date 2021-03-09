@@ -1,8 +1,9 @@
-import React from "react";
-interface PlanetsProps {
-  miliSeconds: number;
-}
-const Planets: React.FC<PlanetsProps> = ({ miliSeconds }) => {
+import React, { useContext } from "react";
+import PlanetContext from "../Context/PlanetContext";
+
+const Planets: React.FC = () => {
+  const { miliSeconds } = useContext(PlanetContext);
+
   return (
     <div className="planets">
       <div

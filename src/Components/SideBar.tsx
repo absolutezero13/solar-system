@@ -1,16 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
+import PlanetContext from "../Context/PlanetContext";
 import PlanetInfoLink from "./PlanetInfoLink";
 import TimeInput from "./TimeInput";
 
-interface SideBarProps {
-  miliSeconds: number;
-  setmiliSeconds: any;
-}
+const SideBar: React.FC = () => {
+  const { miliSeconds, setmiliSeconds } = useContext(PlanetContext);
 
-const SideBar: React.FC<SideBarProps> = ({ miliSeconds, setmiliSeconds }) => {
   return (
     <div className="side-bar">
-      <TimeInput miliSeconds={miliSeconds} setmiliSeconds={setmiliSeconds} />
+      <TimeInput />
       <PlanetInfoLink />
     </div>
   );

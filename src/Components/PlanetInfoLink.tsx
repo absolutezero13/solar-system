@@ -1,11 +1,13 @@
-import React, { useState } from "react";
-import { planetInfos } from "../Data/PlanetInfos";
+import React, { useContext, useState } from "react";
+import PlanetContext from "../Context/PlanetContext";
 import PlanetInfos from "./PlanetInfos";
 const PlanetInfoLink: React.FC = () => {
+  const { planetInfos } = useContext(PlanetContext);
+
   return (
     <div className="planet-info-link">
       <ul className="planet-list">
-        {planetInfos.map((planetInfo) => {
+        {planetInfos.map((planetInfo: any) => {
           const {
             planetName,
             svg,

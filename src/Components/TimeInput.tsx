@@ -1,9 +1,7 @@
-import React, { useRef, useState } from "react";
-interface TimeProps {
-  miliSeconds: number;
-  setmiliSeconds: any;
-}
-const TimeInput: React.FC<TimeProps> = ({ miliSeconds, setmiliSeconds }) => {
+import React, { useRef, useState, useContext } from "react";
+import PlanetContext from "./../Context/PlanetContext";
+const TimeInput: React.FC = () => {
+  const { setmiliSeconds } = useContext(PlanetContext);
   const [value, setValue] = useState(10000);
   const input = useRef(null);
   const changeHandler = (e: any) => {

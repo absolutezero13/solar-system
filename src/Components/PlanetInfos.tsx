@@ -16,7 +16,6 @@ const PlanetInfos: React.FC<PlanetInfosProps> = ({
   averageTemperature,
   radius,
 }) => {
-  const [displayingItem, setDisplayingItem] = useState("");
   const [displayStatus, setDisplayStatus] = useState(false);
   const displayPlanetInfo = () => {
     setDisplayStatus(!displayStatus);
