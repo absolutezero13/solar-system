@@ -1,5 +1,4 @@
-import React, { useContext, useState } from "react";
-import PlanetContext from "../Context/PlanetContext";
+import React, { useState } from "react";
 import PlanetInfoCard from "./PlanetInfoCard";
 
 interface PlanetInfosProps {

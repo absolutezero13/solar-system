@@ -39,11 +39,9 @@
 
 @keyframes fadeIn {
   from {
-    opacity: 0;
     transform: translate(-100%);
   }
   to {
-    opacity: 100%;
     transform: translate(0%);
   }
 }
