@@ -11,10 +11,10 @@ interface PlanetInfos {
 
 type ContextProps = {
   miliSeconds: number;
-  setmiliSeconds: any;
+  setmiliSeconds: (ms: number) => void;
   planetInfos: PlanetInfos[];
 };
 
-const PlanetContext = createContext<Partial<ContextProps>>({});
+const PlanetContext = createContext<ContextProps>({} as ContextProps);
 
 export default PlanetContext;

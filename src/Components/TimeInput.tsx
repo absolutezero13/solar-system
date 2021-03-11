@@ -5,11 +5,12 @@ const TimeInput: React.FC = () => {
   const [value, setValue] = useState(10000);
   const input = useRef(null);
   const changeHandler = (e: any) => {
-    setValue(e.target.value);
+    const value = e.target.value;
+    setValue(value);
     if (!e.target.value) {
       setmiliSeconds(10000);
     } else {
-      setmiliSeconds(e.target.value);
+      setmiliSeconds(value);
     }
   };
 

@@ -15,9 +15,6 @@ html {
     overflow: auto;
     overflow-x: hidden;
   }
-  @media only screen and (max-width: 450px) {
-    font-size: 25%;
-  }
 }
 
 body {
@@ -30,11 +27,12 @@ body {
   background: $bg-color;
 }
 .App {
+  height: 100vh;
   display: flex;
   flex-direction: row;
   align-items: center;
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 660px) {
     flex-direction: column-reverse;
   }
 }
