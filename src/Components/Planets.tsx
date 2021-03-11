@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import PlanetContext from "../Context/PlanetContext";
 
 const Planets: React.FC = () => {

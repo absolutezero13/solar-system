@@ -5,6 +5,9 @@
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
+  @media only screen and (max-width: 450px) {
+    font-size: 2.5rem;
+  }
 
   &__input {
     text-align: center;
@@ -25,5 +28,8 @@
 
   .note {
     font-size: 1rem;
+    @media only screen and (max-width: 450px) {
+      font-size: 2rem;
+    }
   }
 }
