@@ -7,7 +7,7 @@ const PlanetInfoLink: React.FC = () => {
   return (
     <div className="planet-info-link">
       <ul className="planet-list">
-        {planetInfos.map((planetInfo: any) => {
+        {planetInfos!.map((planetInfo) => {
           const {
             planetName,
             svg,

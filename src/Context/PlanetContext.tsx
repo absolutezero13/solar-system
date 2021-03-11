@@ -1,9 +1,18 @@
 import { createContext } from "react";
 
+interface PlanetInfos {
+  planetName: string;
+  radius: string;
+  distanceFromSun?: string;
+  numberOfMoons?: string;
+  averageTemperature: string;
+  svg: string;
+}
+
 type ContextProps = {
-  miliSeconds: any;
+  miliSeconds: number;
   setmiliSeconds: any;
-  planetInfos: any;
+  planetInfos: PlanetInfos[];
 };
 
 const PlanetContext = createContext<Partial<ContextProps>>({});
