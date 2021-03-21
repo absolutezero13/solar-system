@@ -6,7 +6,7 @@ A visualization of the solar system. It's written with React and Typescript. The
 <img src="./planets.PNG">
 </div>
 
-##Installing Solar System
+## Installing Solar System
 
 ```
 git clone https://github.com/absolutezero13/solar-system.git
