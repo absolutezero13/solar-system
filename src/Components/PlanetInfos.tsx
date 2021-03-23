@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import PlanetInfoCard from "./PlanetInfoCard";
-
+import { motion } from "framer-motion";
 interface PlanetInfosProps {
   planetName: string;
   averageTemperature: string;
@@ -24,7 +24,14 @@ const PlanetInfos: React.FC<PlanetInfosProps> = ({
   return (
     <div onClick={displayPlanetInfo} className="planet-list__infos">
       <li>
-        <img src={svg} alt="planet-logo" /> <p>{planetName}</p>
+        <motion.img
+          drag
+          dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
+          dragElastic={0.8}
+          src={svg}
+          alt="planet-logo"
+        />
+        <p>{planetName}</p>
       </li>
       {displayStatus && (
         <PlanetInfoCard

@@ -1,5 +1,6 @@
 import React, { useRef, useState, useContext } from "react";
 import PlanetContext from "./../Context/PlanetContext";
+
 const TimeInput: React.FC = () => {
   const { setmiliSeconds } = useContext(PlanetContext);
   const [value, setValue] = useState(10000);

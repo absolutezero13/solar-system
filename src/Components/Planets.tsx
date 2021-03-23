@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import PlanetContext from "../Context/PlanetContext";
-
+import { motion } from "framer-motion";
 const Planets: React.FC = () => {
   const { miliSeconds } = useContext(PlanetContext);
 
