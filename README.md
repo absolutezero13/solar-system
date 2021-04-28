@@ -14,6 +14,7 @@ git clone https://github.com/absolutezero13/solar-system.git
 
 Navigate to solar-system folder and run the command below;
 
+
 ```
  npm install
 ```
